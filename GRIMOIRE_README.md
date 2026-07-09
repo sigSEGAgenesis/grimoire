@@ -1,6 +1,6 @@
-# grimoire — sig.merlin's binex setup
+# grimoire - sig.merlin's binex setup
 
-A recon & triage **cockpit** for binary exploitation. Not a monolith — an
+A recon & triage **cockpit** for binary exploitation. Not a monolith, an
 opinionated front-end that orchestrates the good tools and encodes a point of
 view. Local-only by design: it analyzes binaries on THIS machine, never reaches
 off-box, never autofires. Suggests and scaffolds; you review and pull the trigger.
@@ -38,12 +38,12 @@ needing nothing installed.
 - Most pwn challenges: pull the binary local (scp) and use full grimoire.
 - Locked-down boxes where you can't install: use grimoire-lite in place.
 - The offset finder needs core dumps (`ulimit -c unlimited`, which it sets).
-  It reports VERIFIED vs candidate honestly — a candidate is a hypothesis;
+  It reports VERIFIED vs candidate honestly, a candidate is a hypothesis;
   confirm it before building on it. Messy crash dynamics (frame writes,
   non-clean ret) can mask control even when the offset is right.
 
 ## Ethos
-Analyze, suggest, scaffold — never autofire, never off-box. The brake is the
+Analyze, suggest, scaffold, never autofire, never off-box. The brake is the
 point. This is a setup that respects the tools it orchestrates and the person
 running it.
 
